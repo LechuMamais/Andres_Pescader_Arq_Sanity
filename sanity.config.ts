@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'Andres_Pescader_Arq',
 
-  projectId: '3t9g3iys',
-  dataset: 'andres_pescader_arq_01',
+  projectId: process.env.SANITY_PROJECT_ID,
+  dataset: process.env.SANITY_DATASET,
 
   plugins: [structureTool(), visionTool()],
 
